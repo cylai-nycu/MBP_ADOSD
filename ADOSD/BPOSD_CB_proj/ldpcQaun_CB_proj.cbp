@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ldpcQaun_CB_proj" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ldpcQaun_CB_proj" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../ldpcQaun/BPOSD.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../ldpcQaun/BPOSD_Test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../ldpcQaun/DecConfig.h" />
+		<Unit filename="../ldpcQaun/OSD/OSD.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../ldpcQaun/OSD/OSD.h" />
+		<Unit filename="../ldpcQaun/bp_dec/bp_dec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../ldpcQaun/bp_dec/bp_dec.h" />
+		<Unit filename="../ldpcQaun/bp_dec/bp_llr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../ldpcQaun/bp_dec/bp_llr.h" />
+		<Unit filename="../ldpcQaun/ldpcBP.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../ldpcQaun/ldpcBSC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../ldpcQaun/ldpc_parm.h" />
+		<Unit filename="../ldpcQaun/lib_math/fast_math.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../ldpcQaun/lib_math/fast_math.h" />
+		<Unit filename="../ldpcQaun/lib_rand/lib_rand.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../ldpcQaun/lib_rand/lib_rand.h" />
+		<Unit filename="../ldpcQaun/lib_rand/splitmix64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../ldpcQaun/lib_rand/xoshiro256starstar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DecConfig.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
