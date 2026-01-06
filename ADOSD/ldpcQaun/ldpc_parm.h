@@ -70,10 +70,10 @@ Define the code to be simulated.
 //#define ORI 625258   // [[625,25,8]] HP code
 
 
-#define ORI 7212   // [[72,12,6]] BB cod
+//#define ORI 7212   // [[72,12,6]] BB cod
 //#define ORI 908   // [[90,8,10]] BB codee
 //#define ORI 1088   // [[108,8,10]] BB code
-//#define ORI 14412   // [[144,12,12]] BB code
+#define ORI 14412   // [[144,12,12]] BB code
 //#define ORI 28812   // [[288,12,18]] BB code
 
 
@@ -719,7 +719,7 @@ PATH_Gs: normalizer matrix
   #define N (288)
   #define K (12)
   #define M (N-K)
-  #define M_G  (N+K)
+  #define M_G   (N+K)
   #define PATH_A  ("codes/QBB28812_A4.txt")
   #define PATH_Gs ("codes/QBB28812_G4s.txt")
   #define PRE_A   ("QBB28812")
@@ -728,7 +728,7 @@ PATH_Gs: normalizer matrix
   #define N (144)
   #define K (12)
   #define M (N-K)
-  #define M_G  (N+K)
+  #define M_G   (N+K)
   #define PATH_A  ("codes/QBB14412_A4.txt")
   #define PATH_Gs ("codes/QBB14412_G4s.txt")
   #define PRE_A   ("QBB14412")
@@ -738,7 +738,7 @@ PATH_Gs: normalizer matrix
   #define N (108)
   #define K (8)
   #define M (N-K)
-  #define M_G  (N+K)
+  #define M_G   (N+K)
   #define PATH_A  ("codes/QBB1088_A4.txt")
   #define PATH_Gs ("codes/QBB1088_G4s.txt")
   #define PRE_A   ("QBB1088")
@@ -748,7 +748,7 @@ PATH_Gs: normalizer matrix
   #define N (90)
   #define K (8)
   #define M (N-K)
-  #define M_G  (N+K)
+  #define M_G   (N+K)
   #define PATH_A  ("codes/QBB908_A4.txt")
   #define PATH_Gs ("codes/QBB908_G4s.txt")
   #define PRE_A   ("QBB908")
@@ -757,7 +757,7 @@ PATH_Gs: normalizer matrix
   #define N (72)
   #define K (12)
   #define M (N-K)
-  #define M_G  (N+K)
+  #define M_G   (N+K)
   #define PATH_A  ("codes/QBB7212_A4.txt")
   #define PATH_Gs ("codes/QBB7212_G4s.txt")
   #define PRE_A   ("QBB7212")
