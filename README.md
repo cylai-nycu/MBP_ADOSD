@@ -1,2 +1,3 @@
 # MBP_ADOSD
-MBP+ADOSD for code capacity noise model simulation
+-ADOSD for code capacity noise model simulation
+-ADOSD_DEM for circuit level noise model simulation
