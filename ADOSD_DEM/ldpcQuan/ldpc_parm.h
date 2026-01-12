@@ -19,7 +19,7 @@ Define the quantum code to be simulated.
 #define RelThr  (0.99)  // reliability threshold
 #define MAX_ITER  (10)
 
-#define P_ERR 0.01
+#define P_ERR 0.007     //options: 0.01  0.007  0.005  0.004 0.003 0.002 0.001
 #define LE_tar   100000
 #define Shot_max 100000
 
