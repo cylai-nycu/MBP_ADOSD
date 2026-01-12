@@ -1,0 +1,23 @@
+
+1.000000e-03  0.000000e+00  0.000000e+00  0.000000e+00  
+Time per BP iteration =1.559e-03
+Time per OSD = 7.495e-01
+Avg iterations w/o OSD=  4.394e+00
+Sample = 100000   LE= 0  OSDw=-2 OSD calls= 18559
+Average remaining bits after RSR: 656.58
+Rel_Thr=0.990000  relative code length= 0.05
+Stage1Fail: 176 times
+Stage2Fail: 306 times
+OSD-0 sufficient: 33 times
+
+2.000000e-03  0.000000e+00  0.000000e+00  0.000000e+00  
+Time per BP iteration =1.558e-03
+Time per OSD = 1.369e+00
+Avg iterations w/o OSD=  5.077e+00
+Sample = 10000   LE= 0  OSDw=-2 OSD calls= 5692
+Average remaining bits after RSR: 231.95
+Rel_Thr=0.990000  relative code length= 0.02
+Stage1Fail: 1 times
+Stage2Fail: 46 times
+OSD-0 sufficient: 1 times
+

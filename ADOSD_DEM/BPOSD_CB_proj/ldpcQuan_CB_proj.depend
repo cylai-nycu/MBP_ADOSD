@@ -1,0 +1,1191 @@
+# depslib dependency file v1.0
+1592947827 source:d:\_proj\ldpcqaun\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1590184788 d:\_proj\ldpcqaun\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1592947465 d:\_proj\ldpcqaun\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1558681894 d:\_proj\ldpcqaun\lib_rand\lib_rand.h
+	<stdint.h>
+
+1592947472 source:d:\_proj\ldpcqaun\ldpcbp.c
+	<math.h>
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./bp_dec/bp_dec.h"
+
+1558418459 d:\_proj\ldpcqaun\lib_mat\lib_mat.h
+	"../ldpc_parm.h"
+
+1558418499 source:d:\_proj\ldpcqaun\lib_mat\lib_mat.c
+	"lib_mat.h"
+
+1567619988 source:d:\_proj\ldpcqaun\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1557782603 source:d:\_proj\ldpcqaun\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1589952422 source:d:\_proj\ldpcqaun\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1592947522 source:d:\_proj\ldpcqaun\ldpcbsc.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1567683462 d:\_proj\ldpcqaun\lib_math\fast_math.h
+
+1567684746 source:d:\_proj\ldpcqaun\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1610526117 source:c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610374478 c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1678027763 c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605025871 c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\lib_rand\lib_rand.h
+	<stdint.h>
+
+1567683462 c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\lib_math\fast_math.h
+
+1610542539 source:c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610541262 c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1670839281 source:c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\ldpcbp.c
+	<math.h>
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+
+1676882361 source:c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\ldpcbsc.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1676908077 source:c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\ldpcbsctemp.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1676905137 c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1567684746 source:c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1605025860 source:c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1557782603 source:c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1589952422 source:c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1676908191 source:c:\users\frankung\onedrive - national chiao tung university\college\1.quantum computation\program\benny bp osd\ldpcqaun\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1610526117 source:d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610374478 d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1731593624 d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605025871 d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\lib_rand\lib_rand.h
+	<stdint.h>
+
+1567683462 d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\lib_math\fast_math.h
+
+1610542539 source:d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610541262 d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1680678470 source:d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\ldpcbp.c
+	<math.h>
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+
+1680678470 source:d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\ldpcbsc.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1567684746 source:d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1605025860 source:d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1683380164 source:d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1589952422 source:d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1720786360 source:d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1720786089 d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1731597898 source:d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\bposd.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1731597866 source:d:\onedrive - national chiao tung university\college\_master research program _ bposd\benny bp osd\ldpcqaun\bposd_test.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1610526117 source:c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610374478 c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1745763866 c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605025871 c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\lib_rand\lib_rand.h
+	<stdint.h>
+
+1567683462 c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\lib_math\fast_math.h
+
+1610542539 source:c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610541262 c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1745513316 source:c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\bposd.c
+	"./ldpc_parm.h"
+	"./DecConfig.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1733370934 c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1733368623 source:c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\bposd_test.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1680678470 source:c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\ldpcbp.c
+	<math.h>
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+
+1680678470 source:c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\ldpcbsc.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1567684746 source:c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1605025860 source:c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1683380164 source:c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1589952422 source:c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1738858277 source:c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1737187576 c:\users\cylai\我的雲端硬碟\[research]\adosd\ldpcqaun\decconfig.h
+
+1610526117 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610374478 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1765213434 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605025871 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\lib_rand\lib_rand.h
+	<stdint.h>
+
+1567683462 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\lib_math\fast_math.h
+
+1610542539 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610541262 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1765210363 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\bposd.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	"./DecConfig.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1737187576 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\decconfig.h
+
+1733370934 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1733368623 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\bposd_test.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1680678470 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\ldpcbp.c
+	<math.h>
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+
+1680678470 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\ldpcbsc.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1567684746 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1605025860 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1683380164 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1589952422 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1738858277 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcqaun\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1610526117 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610374478 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1765215776 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605025871 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\lib_rand\lib_rand.h
+	<stdint.h>
+
+1567683462 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\lib_math\fast_math.h
+
+1610542539 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610541262 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1765214272 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\bposd.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1733370934 c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1567684746 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1605025860 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1683380164 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1589952422 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1765215736 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_vs\ldpcquan\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1610526117 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610374478 c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1765380832 c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605025871 c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\lib_rand\lib_rand.h
+	<stdint.h>
+
+1567683462 c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\lib_math\fast_math.h
+
+1610542539 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610541262 c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1765380751 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\bposd.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1733370934 c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1567684746 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1605025860 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1683380164 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1589952422 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1765215736 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_gf4\ldpcquan\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1765777309 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610374478 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1765817358 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605025871 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\lib_rand\lib_rand.h
+	<stdint.h>
+
+1567683462 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\lib_math\fast_math.h
+
+1610542539 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610541262 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1765816578 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\bposd.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1765814306 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1567684746 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1605025860 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1683380164 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1589952422 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1765817246 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2\ldpcquan\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1767548970 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767548995 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1767548418 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605025871 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\lib_rand\lib_rand.h
+	<stdint.h>
+
+1567683462 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\lib_math\fast_math.h
+
+1610542539 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610541262 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1567684746 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1605025860 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1683380164 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1589952422 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1765817246 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1765814306 c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1767548928 source:c:\users\cylai\我的雲端硬碟\[research]\adosd_v2.1\ldpcquan\bposd.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1767272146 source:e:\我的google drive\[research]\adosd_v2.1\ldpcquan\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767272212 e:\我的google drive\[research]\adosd_v2.1\ldpcquan\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1767289650 e:\我的google drive\[research]\adosd_v2.1\ldpcquan\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605025871 e:\我的google drive\[research]\adosd_v2.1\ldpcquan\lib_rand\lib_rand.h
+	<stdint.h>
+
+1567683462 e:\我的google drive\[research]\adosd_v2.1\ldpcquan\lib_math\fast_math.h
+
+1610542539 source:e:\我的google drive\[research]\adosd_v2.1\ldpcquan\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610541262 e:\我的google drive\[research]\adosd_v2.1\ldpcquan\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1567684746 source:e:\我的google drive\[research]\adosd_v2.1\ldpcquan\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1605025860 source:e:\我的google drive\[research]\adosd_v2.1\ldpcquan\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1683380164 source:e:\我的google drive\[research]\adosd_v2.1\ldpcquan\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1589952422 source:e:\我的google drive\[research]\adosd_v2.1\ldpcquan\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1765817246 source:e:\我的google drive\[research]\adosd_v2.1\ldpcquan\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1765814306 e:\我的google drive\[research]\adosd_v2.1\ldpcquan\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1767548970 source:e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767548995 e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1767592872 e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605025871 e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\lib_rand\lib_rand.h
+	<stdint.h>
+
+1567683462 e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\lib_math\fast_math.h
+
+1610542539 source:e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1610541262 e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1567684746 source:e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1605025860 source:e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1683380164 source:e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1589952422 source:e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1765817246 source:e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1765814306 e:\我的google drive\[research]\adosd_v2.1.2\ldpcquan\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1767623406 source:e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767597707 e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1767636487 e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1767597707 e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_rand\lib_rand.h
+	<stdint.h>
+
+1767597707 e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_math\fast_math.h
+
+1767597707 source:e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767597707 e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1767625206 source:e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\bposd.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1767597708 e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1767597707 source:e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1767597707 source:e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1767597707 source:e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1767597708 source:e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1767622496 source:e:\我的google drive\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1767623406 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1767715619 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_rand\lib_rand.h
+	<stdint.h>
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_math\fast_math.h
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1767702192 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\bposd.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1767597708 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1767597708 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1767622496 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2\ldpcquan\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1767623406 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1767728388 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\lib_rand\lib_rand.h
+	<stdint.h>
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\lib_math\fast_math.h
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1767597708 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1767622496 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1767597708 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1767727227 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev\ldpcquan\bposd.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1767623406 source:c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767597707 c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1767935921 c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1767597707 c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\lib_rand\lib_rand.h
+	<stdint.h>
+
+1767597707 c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\lib_math\fast_math.h
+
+1767597707 source:c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767597707 c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1767899820 source:c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\bposd.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1767597708 c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1767597707 source:c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1767597707 source:c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1767597707 source:c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1767597708 source:c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1767898983 source:c:\users\prof_lai\desktop\adosd_v2.1.2rev\ldpcquan\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
+1767623406 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\bp_dec\bp_dec.c
+	<math.h>
+	"./bp_dec.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\bp_dec\bp_dec.h
+	"../ldpc_parm.h"
+
+1768238227 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\ldpc_parm.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\lib_rand\lib_rand.h
+	<stdint.h>
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\lib_math\fast_math.h
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\bp_dec\bp_llr.c
+	<math.h>
+	"./bp_dec.h"
+	"./bp_llr.h"
+	"../lib_rand/lib_rand.h"
+	"../lib_math/fast_math.h"
+
+1767597707 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\bp_dec\bp_llr.h
+	"../ldpc_parm.h"
+
+1767970038 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\bposd.c
+	"./ldpc_parm.h"
+	"./lib_rand/lib_rand.h"
+	"./lib_math/fast_math.h"
+	"./bp_dec/bp_dec.h"
+	"./bp_dec/bp_llr.h"
+	"./OSD/OSD.h"
+	<math.h>
+	<time.h>
+	<inttypes.h>
+
+1767597708 c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\osd\osd.h
+	"../ldpc_parm.h"
+	<stdint.h>
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\lib_math\fast_math.c
+	<stdio.h>
+	<math.h>
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\lib_rand\lib_rand.c
+	<inttypes.h>
+	<stdio.h>
+	<math.h>
+	"lib_rand.h"
+
+1767597707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\lib_rand\splitmix64.c
+	"lib_rand.h"
+
+1767597708 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\lib_rand\xoshiro256starstar.c
+	"lib_rand.h"
+
+1767962707 source:c:\users\cylai\我的雲端硬碟\adosd_v2.1.3\adosd_v2.1.2rev_dem20260109\ldpcquan\osd\osd.c
+	"OSD.h"
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<sys/time.h>
+
