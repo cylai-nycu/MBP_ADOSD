@@ -30,61 +30,66 @@ clock_t t_start = clock();
 
 
     // ###########################################################################################
-    int  osdw=OSDW, max_iter = MAX_ITER, max_iter_1;
-    double alpha_a = 0, alpha_b = AFP, alpha= AFP;
+    int  osdw=OSDW; // the OSD order defined by the user
+    int max_iter = MAX_ITER;  // maximum number of iterations
 
-    max_iter_1 = max_iter + 1;
+    double alpha_a = 0, alpha_b = AFP, alpha= AFP;
+    double afp=0;
+    afp = (alpha==0 || alpha==100) ? 0 : 100.0/alpha;
+
+
 
     uint8_t *finalResult;
     uint8_t hardD, q;
     double sum;
-        double **prob;   // should send to OSD
-        uint8_t *LastRun; // should send to OSD
-        prob = calloc(N, sizeof(*prob));
-        LastRun = calloc(N, sizeof(*LastRun));
-        for(int i = 0; i<N; i++){prob[i]= calloc(4, sizeof(*prob[i])); }
+
+
+    double **prob;   // should send to OSD
+    uint8_t *LastRun; // should send to OSD
+
+
+    prob = calloc(N, sizeof(*prob));
+    LastRun = calloc(N, sizeof(*LastRun));
+    for(int i = 0; i<N; i++){prob[i]= calloc(4, sizeof(*prob[i])); }
 
     OSD osdDecoder, *osdDec = &osdDecoder;
-    FILE *fp;
 
-    # if STORE_WRONG
-        char path_saveWrong[1000];
-    #endif
-    # if SORTCOMPARE == LastRunSORT  && STORE_LF
-        uint64_t *storeLF = calloc(max_iter+2, sizeof(*storeLF));
-        char path_saveLF[1000];
-    # endif // SORTCOMPARE
-    #if OSD_RECORD
-    OsdRecord osdRecord, *osdRec = &osdRecord;
-    #endif // OSD_RECORD
 
-    FILE *fpErr = fopen("err", "r");
-    // ##########################################################################################
 
   int32_t iter, b, m, target;
   uint8_t *usedTo = calloc(N, sizeof(*usedTo));
-  GFQ_t *nn   = calloc(N, sizeof(*nn));
+
+
+  GFQ_t *nn   = calloc(N, sizeof(*nn)); // noise vector
   GFQ_t *diff = calloc(N, sizeof(*diff));
-  GFQ_t *zz   = calloc(M, sizeof(*zz));
+  GFQ_t *zz   = calloc(M, sizeof(*zz)); //syndrome vector
   GFQ_t *zz_G = calloc(M_G, sizeof(*zz_G));
   uint64_t tx_seed[4];
 
   //- RX
-  double p_err, rnd_val=0, p_bias, afp=0;                   if(rnd_val) { } // just to prevent compile warning when CH_TYPE not 0
-  FILE *fpA = fopen ( PATH_A , "r" );
-  FILE *fpGs = fopen( PATH_Gs, "r" );
+  double p_err, rnd_val=0, p_bias;                  // if(rnd_val) { } // just to prevent compile warning when CH_TYPE not 0
 
-  a_matrix_GFQ  Amtx, *A=&Amtx;
-  g_matrix_GFQ  Gmtx, *G=&Gmtx;
+
+
   uint8_t syndrome_ok, init_syndro_ok;
 
+    rnd256_init();    rnd256_init_priv(tx_seed);
 
-  rnd256_init();    rnd256_init_priv(tx_seed);
+
+//===================================================
+//Load the parity check matrix and logical matrix
+//===================================================
+
+  FILE *fpA = fopen ( PATH_A , "r" );
+  FILE *fpGs = fopen( PATH_Gs, "r" );
+  a_matrix_GFQ  Amtx, *A=&Amtx;
+  g_matrix_GFQ  Gmtx, *G=&Gmtx;
   load_A_GFQ(fpA, A);
   load_G_GFQ(fpGs, G);
-
   fclose(fpA);
   fclose(fpGs);
+
+
 
   #if LLR_BP == 0
   QBP_Ctl       BPC , *bp=&BPC ;
@@ -96,17 +101,6 @@ clock_t t_start = clock();
 
 
 
-  int32_t n_list_sol = 0;  if(n_list_sol){ }    // number of list solutions (and prevent compile warning)
-#if LIST_DEC == 0
-#elif LIST_DEC == 1
-  #if USE_GF2_DEC == 0
-  GFQ_t ListSols[LIST_DEC][N];
-  #elif USE_GF2_DEC == 1
-  GFQ_t ListSols_GF2[LIST_DEC][2*N];
-  #endif
-#else
-  XXX_NG_LIST_DEC_XXX
-#endif
 
 
  printf("Step 2\n");
@@ -116,8 +110,6 @@ clock_t t_start = clock();
 
 
 
-//                // Fa=False, Eb=err bits                    // Q=quantum, Eq=err qubits
-//  uint64_t nCW, nErr, nFa, nEb, nIterAcc, nStop=N_ERR_STOP,  nErrQ, nFaQ, nEq;
   uint32_t nErrBit,  nErrQbit;
   double   bler, ber, far,  LER, qber, qfar,  chk_bler, chk_ber,  aiter;
   double rStep1=0, rStep2=0, tStep1=0, tStep2=0;
@@ -129,13 +121,6 @@ clock_t t_start = clock();
 
 
   tStr = time(NULL);
-  # if SORTCOMPARE == LastRunSORT && STORE_LF
-        fpLF = fopen(path_saveLF, "a");
-        fprintf(fpLF, "%lf ", p_err);
-      for(int i = 0; i<max_iter; i++)   fprintf(fpLF, "0 "); fprintf(fpLF, "\n");
-      fclose(fpLF);
-      memset(storeLF, 0, (max_iter+1)*sizeof(*storeLF));
-  # endif // SORTCOMPARE
 
     initOSD(osdDec);
     osdDec->cnt_enter_osd = 0;
@@ -143,21 +128,26 @@ clock_t t_start = clock();
     osdDec->cnt_stage2_fail = 0;
     osdDec->cnt_osd0 = 0;
 
+
+    FILE *fp;
     fp = fopen( PATH_A , "r" );
     load_A_OSD(osdDec, fp);
     fclose(fp);
     osdDec -> RankH  = M;
     osdDec -> osdw = osdw;
 
-    //alpha = alpha_a * log10(p_err) * 10 + alpha_b;
-    //if(alpha <= 50)    alpha = 0;
-    //printf("\nNew alpha: %lf\n\n", alpha);
 
 
- printf("Step 3\n");
 
 
-p_err = P_ERR;
+//*********************************************************************
+// Load DEM check matrix, logical matrix, and dem error probabilities
+//*********************************************************************
+  printf("Step 3\n");
+
+p_err = P_ERR;  //P_ERR: predefined error rate
+
+
 
 double *p_dem = NULL;
 int    N_dem = 0;
@@ -203,7 +193,7 @@ printf("Loaded %d DEM probabilities\n", N_dem);
 
 
 
- printf("Step 4\n");
+printf("Step 4\n");
 
 printf("\n=====decode =====\n");
 
@@ -212,13 +202,15 @@ printf("\n p_err=%e\n", p_err);
 
 //int OSD_call=0;
 //int BP_unsat=0;
-int LE_cnt=0;
-int LE_Max=LE_tar;
-int shot_max=Shot_max;
-int sample=0;
-int total_iteration=0;
-int total_iter_BPnoOSD=0;
-int total_iter_OSD=0;
+uint32_t LE_cnt=0;
+uint32_t LE_Max=LE_tar;
+uint32_t shot_max=Shot_max;
+uint32_t sample=0;
+uint32_t total_iteration=0;
+uint32_t total_iter_BPnoOSD=0;
+uint32_t total_iter_OSD=0;
+
+uint32_t cnt_0syndrome=0;
 
 uint32_t totalSneaky = 0;
 
@@ -249,12 +241,11 @@ for (b = 0; b < N; b++) {
     else             nn[b] = 0;
 }
 
-/* 2. Syndrome */
+/* 2. Syndrome calculation */
 Quan_GenSyndrome(A, nn, zz);
 
 /* 3. BP init */
 //p_bias = p_err;
-afp = (alpha==0 || alpha==100) ? 0 : 100.0/alpha;
 
 #if LLR_BP==0
 init_syndro_ok = Qbp_init20(bp, zz, A, p_dem, afp);
@@ -267,13 +258,14 @@ iter = 0;
 
 
 
-//        for ( b = 0 ; b < N ; b ++ ) {
-//            usedTo[b] = 0;
-//            LastRun[b] = 0;
-//        }
-//
+
 
 /* 4. BP iteration */
+
+if(syndrome_ok){
+    cnt_0syndrome++;
+}
+
     clock_t t3 = clock();
 
 while(!syndrome_ok && iter < max_iter){
@@ -292,21 +284,7 @@ while(!syndrome_ok && iter < max_iter){
 //    total_iter_BPnoOSD+=iter;
 
 /* 5. OSD if needed */
-//
-//    #if SORTCOMPARE == LastRunSORT && OSDW !=-1
-//    if(osdw == -1 || !syndrome_ok){
-//        if(osdw != -1 && !syndrome_ok){
-//            for(b = 0; b<N; b++){
-//                // ==== calculate LastRun =====
-//                if(bp->tt[b] != usedTo[b]){
-//                    usedTo[b] = bp->tt[b];
-//                    LastRun[b] = iter;
-//                }
-//            }
-//        }
-//         //for(b = 0; b<N; b++){ printf("%d ", bp->tt[b]);}            printf("\n");
-//    }
-//    #endif // SORTCOMPARE
+
 
 if(osdw == -1 || syndrome_ok){
     finalResult = bp->tt;
@@ -317,6 +295,13 @@ if(osdw == -1 || syndrome_ok){
         sum=0; for(q=0;q<Q;q++) sum+=bp->qn[b][q];
         for(q=0;q<Q;q++) prob[b][q]=bp->qn[b][q]/sum;
     }
+
+    //========================================
+    //Reliable Subset Reduction
+    //========================================
+
+
+
 
     clock_t t0 = clock();
     if(osdw == -2){
@@ -344,20 +329,9 @@ Quan_DegSyndrome(G, diff, zz_G);
 
 
 
-//for(int i = 0; i < M_G; i++) {
-//    printf("G syndrome %d", zz_G[i]);
-//}
-//printf("\n");
-//
-//for(int i = 0; i < M_G; i++) {
-//    printf("G syndrome %d", zz_G[i]);
-//}
-//printf("\n");
 
 
 
-
-// �p�G�޿� syndrome ���� 0�A���ܨS���޿���~
 if(is_zero_vec(zz_G, M_G)) {
     //printf("Decoding SUCCESS (no logical error)\n");
 } else {
@@ -376,7 +350,7 @@ clock_t t_end = clock();
 total_time_sec = (double)(t_end - t_start) / CLOCKS_PER_SEC;
 double avg_time = total_time_sec / sample;   // �C�� decoding �������ɶ� (��)
 double avg_iter = 1.0*total_iteration/ sample;
-double avg_iter_noOSD = 1.0*total_iter_BPnoOSD/(sample-osdDec->cnt_enter_osd);
+double avg_iter_noOSD = 1.0*total_iter_BPnoOSD/(sample-osdDec->cnt_enter_osd-cnt_0syndrome);
 
 
 double pL = 1.0 * LE_cnt / sample;
@@ -465,33 +439,6 @@ printf("OSD-0 sufficient: %llu times\n", osdDec->cnt_osd0);
 //printf("LER = %.6e\n", pL);
 
 
-//	GFQ_t error_vec[N];
-//    int syndrome[M];
-//    int cnt0=0;
-//
-//    // �ͦ��Ҧ� weight-2 error vectors
-//    for(int i=0; i<N-1; i++) {
-//        for(int j=i+1; j<N; j++) {
-//            memset(error_vec, 0, sizeof(error_vec));
-//            error_vec[i] = 1;
-//            error_vec[j] = 1;
-//
-//            Quan_GenSyndrome(A, error_vec, zz);
-//            Quan_DegSyndrome(G, error_vec, zz_G);
-//
-//          if(is_zero_vec(zz, M) && !is_zero_vec(zz_G, M_G)) {
-//    cnt0++;
-//    printf(" %d %d |",i,j);
-//}
-//
-//        }
-//    }
-//
-//	printf("\n # of zero syndrome =%d\n", cnt0);
-
- //   fprintf(fpBER,  "%s\n", path_BER);
-
- //   fclose(fpBER);
 
     free(usedTo);
     free(nn);
