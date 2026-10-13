@@ -1,0 +1,7 @@
+rank HX=16, rank HZ=16, CSS commute=yes
+HX check weights=[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 12, 12, 12]
+HZ check weights=[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 12, 12, 12]
+HX min syndrome weights for physical data weights 1..4=[4, 3, 3, 2], witnesses=[(3,), (0, 22), (0, 7, 22), (0, 15, 16, 22)]
+HZ min syndrome weights for physical data weights 1..4=[4, 3, 3, 2], witnesses=[(0,), (1, 23), (0, 8, 24), (1, 7, 8, 25)]
+min DS weight =5 (witness exists), no DS error weight <5 for nontrivial data Pauli.
+Original check nonzeros=216; additional check nonzeros=112; total=328.

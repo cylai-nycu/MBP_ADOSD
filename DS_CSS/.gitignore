@@ -1,0 +1,7 @@
+/ldpcQaun/*.exe
+/ldpcQaun/**/*.exe
+/ldpcQaun/*.o
+/ldpcQaun/**/*.o
+/ldpcQaun/*.cpp
+/ldpcQaun/**/*.cpp
+/ldpcQaun/trace_*.txt
