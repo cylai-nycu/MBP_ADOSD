@@ -91,7 +91,7 @@ static void append_result(const char *which, double p_data, uint64_t failures,
     double error_bar = 2.0 * sqrt(logical_error_rate * (1.0 - logical_error_rate) / shots);
     long file_size;
 
-    if (snprintf(filename, sizeof(filename), "%s.txt", which) >= (int)sizeof(filename))
+    if (snprintf(filename, sizeof(filename), "%s-model1.txt", which) >= (int)sizeof(filename))
         fail("code name is too long for result filename");
     fp = fopen(filename, "a+");
     if (!fp) {

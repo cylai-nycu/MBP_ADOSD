@@ -43,4 +43,4 @@ The physical channel remains depolarizing: `P(I)=1-p_data`, `P(X)=P(Y)=P(Z)=p_da
 - `--seed N`: random seed.
 - `--self-test`: matrix/single-fault consistency, logical-classification, and virtual-prior checks; supported codes also run single-fault decoding checks.
 
-The executable prints logical error rate, failure count, shots, and average BP iterations. Each simulation appends `p_data`, logical error rate, and an approximate two-standard-error binomial bar to `<code>.txt` in the current directory.
+The executable prints logical error rate, failure count, shots, and average BP iterations. Each simulation appends `p_data`, logical error rate, and an approximate two-standard-error binomial bar to `<code>-model1.txt` in the current directory (for example, `18-ds3-model1.txt`). The filename suffix distinguishes these results from other noise models.
